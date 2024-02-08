@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <script src="myscripts.js"></script>
+    <link rel="stylesheet" href="style4.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+
+          <div class="info">
+            <div class="information">
+              <img src="Image/location.png" class="icon" alt="" />
+              <p>Bankura India 722207</p>
+            </div>
+            <div class="information">
+              <img src="Image/email.png" class="icon" alt="" />
+              <p>somanayak113@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="Image/phone.png" class="icon" alt="" />
+              <p>123-456-7890</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="Index.html" Id="contactForm" onsubmit="return(validateForm(event));" >''
+            <h3 class="title">Contact us</h3>
+
+            <div class="input-container">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="input" required>
+              <span id="nameError" class="error"></span>
+            </div>
+
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="input" required>
+              <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="input-container">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" class="input" required>
+              <span id="phoneError" class="error"></span>
+            </div>
+
+            <div class="input-container textarea">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" class="input" required></textarea>
+              <span id="messageError" class="error"></span>
+            </div>
+
+            <input type="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

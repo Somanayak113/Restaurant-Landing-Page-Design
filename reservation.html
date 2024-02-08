@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserve a table</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script src="myscripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Reservation Form</h1>
+
+    <form action="Index.html" id="reservationForm" onsubmit="return(validateForm(event));">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <span id="nameError" class="error"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <span id="emailError" class="error"></span>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" />
+      <span id="phoneError" class="error"></span>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" />
+      <span id="dateError" class="error"></span>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" />
+      <span id="timeError" class="error"></span>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" />
+      <span id="guestsError" class="error"></span>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <span id="messageError" class="error"></span>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+
+</html>

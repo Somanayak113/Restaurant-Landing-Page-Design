@@ -1,0 +1,140 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background:linear-gradient(to left, rgb(233, 128, 147), rgb(149, 249, 149));
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  align-items: flex-start;  
+background-color: rgb(163, 166, 212);
+}
+
+
+.logo {
+  color: rgb(245, 11, 11);
+  min-height: 20px;
+}
+
+.logo h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+    font-size: 3rem;
+}
+.logo h1:hover{
+  color: rgb(252, 253, 252);
+  cursor: pointer;
+}
+
+.menu-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(41, 9, 157);
+  text-align: center;
+}
+
+.menu-item {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 232px;
+  height: 180px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+
+.menu-item-details {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  color: rgb(6, 6, 6);
+  font-weight: 600;
+  text-align: center;
+}
+
+.menu-item-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.menu-item-price {
+  font-size: 16px;
+}
+@media  (max-width: 768px) {
+  
+.container{
+  max-width: 428px;
+  
+  
+}
+.menu-item img {
+  width: 72px;
+  height: 70px;
+  
+}
+.menu-item-details {
+  margin-left: 2px;
+  margin-bottom: 10px;
+  color: rgb(6, 6, 6);
+  font-weight: 100;
+  text-align: center;
+  font-size: 4px;
+}
+.menu-item-name {
+  font-size: 8px;
+  margin-bottom: 2px;
+}
+.menu-item-price {
+  font-size: 5px;
+}
+.menu-section h2 {
+  font-size: 10px;
+  margin-right: 22px;
+}
+
+@media  (max-width: 480px){
+  .container{
+    max-width: 300px;    
+  }
+  .menu-item img {
+    width: 45px;
+    height: 40px;
+    
+  }
+  .menu-item-details {
+    margin-right: 14px;
+    margin-bottom: 10px;
+    color: rgb(6, 6, 6);
+    font-weight: 100;
+    text-align: center;
+    font-size: 4px;
+  }
+  .menu-item-name {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+  .menu-item-price {
+    font-size: 5px;
+  }
+  .menu-section h2 {
+    font-size: 10px;
+    margin-right: 22px;
+  }
+  .logo h1{
+    font-size: 22px;
+  }
+  
+}
+}
